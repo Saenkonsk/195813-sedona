@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -12,23 +13,23 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">
+            <li class="main-nav__item">
+              <a class="main-nav__link">
                 Главная
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html" class="site-list__link">
+            <li class="main-nav__item">
+              <a href="photo.html" class="main-nav__link">
                 Фото и Видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html" class="site-list__link">
+            <li class="main-nav__item">
+              <a href="form.html" class="main-nav__link">
                 Форма отзыва
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
                 Html Academy
               </a>
             </li>
@@ -36,7 +37,7 @@
         </div>
       </nav>
       <a class="page-header__logo">
-        <img src="http://placehold.it/102x83" alt="City of Sedona" width="102" height="83" class="page-header__logo-image">
+        <img src="img/logo-sedona-mobile.svg" alt="City of Sedona" width="102" height="83" class="page-header__logo-image">
       </a>
     </header>
     <main class="page-main">
@@ -52,9 +53,9 @@
         </p>
       </section>
       <section class="gallery">
-        <ul class="gallery__list">
+        <ul class="gallery__list site-list">
           <li class="gallery__item">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Картинка с большой дорогой" class="gallery__image">
+            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Картинка с большой дорогой" class="gallery__image">
             <h3 class="gallery__title">
               Неродные просторы
             </h3>
@@ -69,7 +70,7 @@
             </span>
           </li>
           <li class="gallery__item">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Картинка с катусом" class="gallery__image">
+            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Картинка с катусом" class="gallery__image">
             <h3 class="gallery__title">
               Местная растительность
             </h3>
@@ -84,7 +85,7 @@
             </span>
           </li>
           <li class="gallery__item">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Картинка с горной дорогой" class="gallery__image">
+            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Картинка с горной дорогой" class="gallery__image">
             <h3 class="gallery__title">
               Дорога на Север
             </h3>
@@ -99,7 +100,7 @@
             </span>
           </li>
           <li class="gallery__item">
-            <img src="http://placehold.it/280x280" width="280" height="280" alt="Картинка с Мостом Дьявола" class="gallery__image">
+            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Картинка с Мостом Дьявола" class="gallery__image">
             <h3 class="gallery__title">
               Мост Дьявола
             </h3>
@@ -123,20 +124,14 @@
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
         <section class="presentation__video">
-          <img src="http://placehold.it/320x200" alt="Обложка видео" width="320" height="200">
+          <img src="img/video-mobile@1x.jpg" alt="Обложка видео" width="320" height="200">
           <div class="video-controls">
             <div class="video-controls__progress-bar">
-              <input class="progress-bar-input" type="range">
+              <button type="button" class="video-controls__progress-bar-btn"></button>
             </div>
-            <div class="video-controls__repeat">
-              <!-- Тут будет svg -->
-            </div>
-            <div class="video-controls__subtitles">
-              <!-- Тут будет svg -->
-            </div>
-            <div class="video-controls__full-screen">
-
-            </div>
+            <button class="video-controls__repeat-btn"></button>
+            <button class="video-controls__subtitles-btn"></button>
+            <button class="video-controls__full-screen-btn"></button>
           </div>
         </section>
       </section>

@@ -1,0 +1,27 @@
+ .advantages__title {
+  font-size: 21px;
+  line-height: 10px;
+  font-weight: 400;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.advantages__item--blue {
+  color: @white;
+
+  background-color: @blue;
+}
+
+/* Пока не очень получается у меня с псевдоэлеметом, думаю сделать отдельный блок для этой картинки */
+.advantages__item--long-city:after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 260px;
+    background-image: url(../../img/main-city-mobile@1x.jpg);
+}
