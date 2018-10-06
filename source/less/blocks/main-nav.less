@@ -4,14 +4,21 @@
   font-weight: 700;
   color: @white;
 
-  background-color: @blue;
+  display: block;
+  /*Не работает выравнивание, хотя в демке с первого интенсива так*/
+  vertical-align: middle;
+
+  width: 320px;
+  height: 55px;
 
   .no-decoration();
 }
 
-/* спросить про размеры */
 .main-nav__item {
-  width: 320px;
-  height: 55px;
+  background-color: @blue;
+  border: 1px solid #ffffff;
 }
 
+.main-nav__list {
+  padding: 0;
+}
