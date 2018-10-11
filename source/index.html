@@ -42,7 +42,7 @@
     </header>
     <main class="page-main">
       <section class="intro">
-        <div class="intro__image-wrap">
+        <div class="intro__image-wrap--index">
           <!-- Уменьшил размеры, чтобы видно было фон. Не нашел svg -->
           <img class="intro__image" src="http://placehold.it/290x220" width="20" height="20" alt="Sedona">
         </div>
@@ -65,7 +65,7 @@
             <span class="advantages__number">
               — №1 —
             </span>
-            <p class="advantages__description advantages__description--city">
+            <p class="advantages__description advantages__description--margin-bot">
               Седона не аттракцион для туристов, там течет своя жизнь
             </p>
             <div class="advantages__image advantages__image--city">
@@ -73,7 +73,7 @@
             </div>
             <ul class="more-advantages site-list">
               <li class="more-advantages__item">
-                <h3 class="more-advantages__title more-advantages__title--accommodation">
+                <h3 class="more-advantages__title more-advantages__title--first more-advantages__title--accommodation">
                   Жилье
                 </h3>
                 <p class="more-advantages__description">
@@ -92,7 +92,7 @@
                 <h3 class="more-advantages__title more-advantages__title--food">
                   Еда
                 </h3>
-                <p class="more-advantages__description">
+                <p class="more-advantages__description more-advantages__description--last">
                   Всегда заказывайте фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
@@ -105,7 +105,7 @@
             <span class="advantages__number">
               — №2 —
             </span>
-            <p class="advantages__description">
+            <p class="advantages__description advantages__description--margin-bot">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
             <div class="advantages__image advantages__image--bridge">
@@ -113,7 +113,7 @@
             </div>
           </li>
           <li class="advantages__item advantages__item--short">
-            <h3 class="advantages__title">
+            <h3 class="advantages__title advantages__title--third">
               Небольшая площадь
             </h3>
             <span class="advantages__number">
@@ -154,7 +154,9 @@
         <p class="booking__description">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="booking__find-a-hotel button button--finder" href="#">Найти гостиницу</a>
+        <a class="booking__find-a-hotel button button--finder" href="#">
+          Найти гостиницу
+        </a>
       </section>
       <section class="map">
         <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
@@ -168,17 +170,23 @@
           <ul class="social">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                Мы в VK
+                <span class="social__text visually-hidden">
+                  Мы в VK
+                </span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                Мы в Facebook
+                <span class="social__text visually-hidden">
+                  Мы в Facebook
+                </span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
-                Мы в YouTube
+                <span class="social__text visually-hidden">
+                  Мы в YouTube
+                </span>
               </a>
             </li>
           </ul>
