@@ -22,3 +22,40 @@
   color: @black;
   font-weight: 700;
 }
+
+.gallery__list {
+  width: 320px;
+
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 648px;
+  }
+
+  .gallery__item:first-child {
+    width: 648px;
+  }
+
+  .gallery__item {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__list {
+    width: 1200px;
+  }
+
+  .gallery__item:first-child {
+    width: 1200px;
+  }
+
+  .gallery__item {
+    width: 400px;
+  }
+}
