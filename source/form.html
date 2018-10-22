@@ -56,7 +56,7 @@
         </p>
       </section>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="feedback-form__fieldset">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--name">
           <legend class="feedback-form__fieldset-title">Представьтесь:</legend>
           <ul class="fieldset__list site-list">
             <li class="fieldset__item">
@@ -73,9 +73,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
           <legend class="feedback-form__fieldset-title">Контактная информация:</legend>
-          <ul class="fieldset__list site-list">
+          <ul class="fieldset__list fieldset__list--contacts site-list">
             <li class="fieldset__item">
               <label class="feedback-form__label--input" for="phone-number">Контактный телефон<sup>*</sup>:</label>
               <input class="feedback-form__input-text feedback-form__input-text--phone" id="phone-number" type="tel" name="phone-number" placeholder="Введите телефон" required>
@@ -86,7 +86,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--impression">
           <legend class="feedback-form__fieldset-title">Ваше общее впечатление:</legend>
           <ul class="fieldset__list site-list">
             <li class="fieldset__item">
@@ -103,9 +103,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--sights">
           <legend class="feedback-form__fieldset-title">Посещенные достопримечательности:</legend>
-          <ul class="fieldset__list site-list">
+          <ul class="fieldset__list fieldset__list--sights site-list">
             <li class="fieldset__item">
               <input class="feedback-form__input-checkbox" type="checkbox" id="devil's-bridge" name="sights" value="devil's-bridge" checked>
               <label class="feedback-form__label--checkbox" for="devil's-bridge">Мост Дьявола</label>
@@ -124,7 +124,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="feedback-form__fieldset">
+        <fieldset class="feedback-form__fieldset feedback-form__fieldset--emotions">
           <legend class="feedback-form__fieldset-title">Опишите свои эмоции:</legend>
           <textarea class="feedback-form__textarea" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
