@@ -15,7 +15,7 @@
   display: inline-block;
 
   width: 280px;
-  height: 21px;
+  min-height: 21px;
 
   margin: 0 auto;
   margin-bottom: 49px;
@@ -29,5 +29,26 @@
   &:active {
     color: #85b0cd;
     background-color: #5496bd;
+  }
+}
+
+.button--review {
+  width: 280px;
+  min-height: 58px;
+
+  padding: 0;
+
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .button--finder {
+    width: 458px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button--review {
+    width: 480px;
   }
 }

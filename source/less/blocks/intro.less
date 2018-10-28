@@ -23,7 +23,7 @@
   line-height: 26px;
   font-weight: 700;
 
-  width: 280px;
+  width: 278px;
   margin: 0 auto;
   margin-bottom: 27px;
   padding: 0 10px;
@@ -55,11 +55,29 @@
     //margin-bottom: 42px;
   }
 
+  .intro__image-wrap {
+    width: 768px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
   .intro__title {
     width: 495px;
   }
 
   .intro__subtitle {
     width: 495px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__image-wrap--index {
+    width: 1200px;
+    height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .intro__image-wrap {
+    width: 1200px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 }
