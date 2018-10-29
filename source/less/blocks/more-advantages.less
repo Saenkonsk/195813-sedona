@@ -4,12 +4,12 @@
   font-weight: 700;
 
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 28px;
 }
 
 .more-advantages__title--first {
-  padding-top: 34px;
+  padding-top: 35px;
 }
 
 .more-advantages__description {
@@ -19,6 +19,8 @@
   color: @light-black;
 
   margin: 0;
+
+  width: 230px;
   //margin-bottom: 33px;
 }
 
@@ -28,7 +30,7 @@
 
   padding: 0;
   margin: 0;
-  margin-bottom: 56px; //временно!
+  margin-bottom: 37px; //временно!
 
   background-color: @white;
 }
@@ -43,9 +45,9 @@
   padding-left: 70px;
 }
 
-.more-advantages__description--last {
+/*.more-advantages__description--last {
   margin-bottom: 40px;
-}
+}*/
 
 .more-advantages__item::before {
   position: absolute;
@@ -66,7 +68,7 @@
 .more-advantages__item--souvenirs::before {
   background-image: url("../img/icon-gift.svg");
 
-  top: 17px;
+  top: 16px;
   left: 25px;
   width: 32px;
   height: 38px;
@@ -86,6 +88,12 @@
     width: 100%;
     min-width: 768px;
     display: flex;
+    align-items: flex-start;
+
+    padding-top: 59px;
+    margin-bottom: 0;
+
+    min-height: 271px;
   }
 
   .more-advantages__item {
@@ -98,11 +106,20 @@
     flex-grow: 1;
   }
 
+  .more-advantages__title {
+    font-size: 21px;
+  }
+
+  .more-advantages__title--first {
+    padding-top: 28px;
+  }
+
   .more-advantages__title,
   .more-advantages__description {
     width: 165px;
 
     margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   .more-advantages__item::before {
@@ -126,11 +143,21 @@
     height: 75px;
   }
 
+  .more-advantages__item--souvenirs .more-advantages__title {
+    padding-top: 25px;
+  }
+
   .more-advantages__item--food::before {
     background-image: url("../img/icon-burger.svg");
 
     width: 77px;
     height: 68px;
+
+    padding-bottom: 2px;
+  }
+
+  .more-advantages__item--food .more-advantages__title {
+    padding-top: 30px;
   }
 
   .more-advantages__item--souvenirs {

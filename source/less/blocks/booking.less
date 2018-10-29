@@ -2,6 +2,10 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  padding-top: 10px;
+
+  margin-bottom: 19px;
 }
 
 .booking__description {
@@ -9,6 +13,8 @@
   line-height: 24px;
   font-weight: 400;
   color: @light-black;
+
+  margin-bottom: 35px;
 }
 
 .booking {
@@ -20,5 +26,26 @@
 @media (min-width: @tablet-width) {
   .booking {
     width: 648px;
+  }
+
+  .booking__title {
+    font-size: 30px;
+
+    padding-top: 30px;
+
+    margin-bottom: 31px;
+  }
+
+  .booking__description {
+    width: 460px;
+
+    margin: 0 auto;
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking__description {
+    margin-bottom: 48px;
   }
 }
