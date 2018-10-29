@@ -1,23 +1,157 @@
+.main-nav {
+  position: relative;
+
+  width: 320px;
+  min-height: 56px;
+  margin: 0 auto;
+}
+
 .main-nav__link {
+  display: block;
+
   font-size: 18px;
-  line-height: 40px;
+  /*line-height: 40px;*/
   font-weight: 700;
   color: @white;
 
-  width: 320px;
-  height: 55px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  background-color: @blue;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+
+  width: 100%;
 
   .no-decoration();
+
+  &[href]:hover {
+    background-color: #669ec0;
+  }
+
+  &[href]:active {
+    color: #85b0cd;
+    background-color: #5496bd;
+  }
 }
 
-.main-nav__item {
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 23px;
+  height: 20px;
+
   background-color: @blue;
-  border: 1px solid #ffffff;
+
+  cursor: pointer;
+  border: none;
 }
 
-.main-nav__list {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 15px;
+  left: 17px;
+
+  width: 36px;
+  height: 2px;
+
+  background-color: @white;
+  box-shadow: 0 8px 0 0 @white, 0 16px 0 0 @white;
 }
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: -1px;
+
+    width: 25px;
+    height: 4px;
+
+    background-color: @white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    margin: 0;
+    width: auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-right: auto;
+  }
+
+  .main-nav__item {
+    width: 20%;
+  }
+
+  .main-nav__link {
+    font-size: 14px;
+    line-height: 26px;
+
+    color: @black;
+
+    background: none;
+    border: none;
+
+    &[href]:hover {
+      color: @blue;
+      background-color: @white;
+    }
+
+    &[href]:active {
+      color: #dadada;
+      background-color: @white;
+    }
+
+    /*&:not[href] {
+      color: #766357;
+    }
+
+    &:hover:not[href] {
+    color: #dbd8d5;
+    }
+
+    &:not[href]:active {
+      Как на нее нажать?
+      color: #dbd8d5;
+    }*/
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+/*.page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 102px;
+    margin: 0 auto;
+}*/

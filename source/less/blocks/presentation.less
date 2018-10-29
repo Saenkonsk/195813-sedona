@@ -2,6 +2,8 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  padding: 0 40px;
 }
 
 .presentation__description {
@@ -9,4 +11,28 @@
   line-height: 24px;
   font-weight: 400;
   color: @light-black;
+
+  padding: 0 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation__description {
+    padding: 0 110px;
+  }
+
+  .presentation {
+    width: 648px;
+
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .presentation {
+    width: 800px;
+  }
+
+  .presentation__description {
+    padding: 0 185px;
+  }
 }

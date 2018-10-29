@@ -1,4 +1,28 @@
-.page-header {
+/*.page-header {
   display: flex;
   flex-direction: column;
+} Нет необходимости
+}*/
+
+.page-header__logo {
+  display: block;
+  height: 57px;
+
+  text-align: center;
+}
+
+.page-header__logo img {
+  width: 102px;
+  height: 83px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 102px;
+    margin: 0 auto;
+  }
 }

@@ -73,3 +73,84 @@
 
   background-color: @white;
 }
+
+.feedback-form__fieldset {
+  width: 280px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  border: 0;
+}
+
+.feedback-form__asterisk {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__fieldset {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+  }
+
+  .feedback-form__fieldset--impression {
+    order: -1;
+
+    width: 50%;
+  }
+
+  .feedback-form__fieldset--name {
+    width: 50%;
+  }
+
+  .fieldset__list--sights {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fieldset__list--sights .fieldset__item {
+    width: 50%;
+  }
+
+  .button-wrapper {
+    width: 648px;
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .feedback-form__asterisk {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset__list--sights .fieldset__item {
+    width: 25%;
+  }
+
+  .fieldset__list--contacts {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fieldset__list--contacts .fieldset__item {
+    width: 50%;
+  }
+
+  .button-wrapper {
+    width: 960px;
+  }
+}

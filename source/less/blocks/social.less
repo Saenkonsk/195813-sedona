@@ -1,7 +1,15 @@
 .social {
   list-style: none;
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 151px;
+  margin: 0 auto;
+  margin-bottom: 45px;
   padding: 0;
+  padding-top: 40px;
 }
 
 .social__item {
@@ -10,9 +18,21 @@
 
 .social__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   min-width: 46px;
   min-height: 48px;
 
   background-color: @blue;
+  fill: @white;
+}
+
+.social__link:hover {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
+  fill: #88b6d1;
 }

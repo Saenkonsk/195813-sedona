@@ -4,11 +4,12 @@
   font-weight: 700;
 
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
+  padding-top: 28px;
 }
 
 .more-advantages__title--first {
-  padding-top: 37px;
+  padding-top: 34px;
 }
 
 .more-advantages__description {
@@ -18,7 +19,7 @@
   color: @light-black;
 
   margin: 0;
-  margin-bottom: 33px;
+  //margin-bottom: 33px;
 }
 
 .more-advantages {
@@ -27,16 +28,118 @@
 
   padding: 0;
   margin: 0;
+  margin-bottom: 56px; //временно!
 
   background-color: @white;
 }
 
 .more-advantages__item {
+  margin: 0 auto;
+
   width: 250px;
+
+  position: relative;
 
   padding-left: 70px;
 }
 
 .more-advantages__description--last {
   margin-bottom: 40px;
+}
+
+.more-advantages__item::before {
+  position: absolute;
+
+  content: "";
+
+  background-size: cover;
+}
+
+.more-advantages__item--accommodation::before {
+  background-image: url("../img/icon-house.svg");
+  top: 25px;
+  left: 21px;
+  width: 39px;
+  height: 37px;
+}
+
+.more-advantages__item--souvenirs::before {
+  background-image: url("../img/icon-gift.svg");
+
+  top: 17px;
+  left: 25px;
+  width: 32px;
+  height: 38px;
+}
+
+.more-advantages__item--food::before {
+  background-image: url("../img/icon-burger.svg");
+
+  top: 22px;
+  left: 18px;
+  width: 40px;
+  height: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .more-advantages {
+    width: 100%;
+    min-width: 768px;
+    display: flex;
+  }
+
+  .more-advantages__item {
+    display: inline-block;
+    //width: 252px;  //c 256 перекидывается на следующую строку, не понимаю почему
+    width: 33%;
+    padding: 0;
+    text-align: center;
+
+    flex-grow: 1;
+  }
+
+  .more-advantages__title,
+  .more-advantages__description {
+    width: 165px;
+
+    margin: 0 auto;
+  }
+
+  .more-advantages__item::before {
+    display: block;
+    margin: 0 auto;
+    position: static;
+    content: "";
+    background-size: cover;
+  }
+
+  .more-advantages__item--accommodation::before {
+    background-image: url("../img/icon-house.svg");
+    width: 75px;
+    height: 72px;
+  }
+
+  .more-advantages__item--souvenirs::before {
+    background-image: url("../img/icon-gift.svg");
+
+    width: 64px;
+    height: 75px;
+  }
+
+  .more-advantages__item--food::before {
+    background-image: url("../img/icon-burger.svg");
+
+    width: 77px;
+    height: 68px;
+  }
+
+  .more-advantages__item--souvenirs {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .more-advantages__description {
+    width: 290px;
+  }
 }
