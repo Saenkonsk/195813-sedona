@@ -1,3 +1,7 @@
+.text-wrap-desktop {
+  display: none;
+}
+
 .more-advantages__title {
   font-size: 18px;
   line-height: 26px;
@@ -19,8 +23,9 @@
   color: @light-black;
 
   margin: 0;
+  padding-right: 18px;
 
-  width: 230px;
+  //width: 230px;
   //margin-bottom: 33px;
 }
 
@@ -116,10 +121,18 @@
 
   .more-advantages__title,
   .more-advantages__description {
-    width: 165px;
+    //width: 165px;
 
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  .more-advantages__description {
+    padding: 0 47px;
+  }
+
+  .more-advantages__description--last {
+    padding: 0 50px;
   }
 
   .more-advantages__item::before {
@@ -167,6 +180,10 @@
 
 @media (min-width: @desktop-width) {
   .more-advantages__description {
-    width: 290px;
+    //width: 290px;
+  }
+
+  .text-wrap-desktop {
+    display: inline;
   }
 }
