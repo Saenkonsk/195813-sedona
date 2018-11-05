@@ -1,4 +1,227 @@
-/*Чтобы npm test не ругался пока*/
-.copiright {
-  @asd : white;
+.video-controls {
+  width: 280px;
+  min-height: 66px;
+
+  margin: 0 auto;
+  margin-top: -7px;
+
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.video-controls__progress-bar {
+  width: 280px;
+  height: 45px;
+
+  position: absolute;
+
+  top: -45px;
+  left: 0;
+
+  order: -1;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.video-controls__progress-bar-btn {
+  border-radius: 50%;
+  background-color: @white;
+  position: absolute;
+  top: 19px;
+  left: 57px;
+
+  padding: 0;
+
+  width: 10px;
+  height: 10px;
+}
+
+.video-controls__buttons {
+  //height: 66px;
+  width: 280px;
+
+  position: relative;
+
+  background-color: #f2f2f2;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.video-controls button {
+  border: none;
+
+  //background-color: #f2f2f2;
+}
+
+.video-controls__buttons button {
+  background-color: transparent;
+}
+
+.video-controls path,
+.video-controls polygon {
+  fill: #5c6870;
+}
+
+.video-controls button:hover path,
+.video-controls button:hover polygon {
+  fill: #333333;
+}
+
+.video-controls button:active path,
+.video-controls button:active polygon {
+  fill: #b8b8b8;
+}
+
+.video-controls__repeat-btn {
+  padding: 0;
+  margin-left: 25px;
+
+  //background-color: #f2f2f2;
+}
+
+.video-controls__subtitles-btn {
+  padding: 0;
+  //margin-top: 7px;
+  margin-left: 133px;
+  margin-right: 31px;
+
+  //background-color: #f2f2f2;
+}
+
+.video-controls__full-screen-btn {
+  padding: 0;
+
+  //background-color: #f2f2f2;
+}
+
+.video-controls__scale {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 22px;
+
+  margin: 0 auto;
+
+  width: 235px;
+  height: 3px;
+}
+
+.video-controls__progress-bar button {
+  background-color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .video-controls {
+    width: 648px;
+    height: 92px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    position: absolute;
+
+    bottom: 7px;
+    left: 0;
+  }
+
+  .video-controls__buttons {
+    //background-color: rgba(0, 0, 0, 0.6);
+    background-color: inherit;
+
+    //position: absolute;
+    //top: 0;
+
+    width: 648px;
+    height: 100%;
+
+    justify-content: space-between;
+  }
+
+  .video-controls__progress-bar {
+    width: 400px;
+    height: 92px;
+
+    margin-left: 13px;
+
+    position: relative;
+    top: auto;
+    left: auto;
+
+    order: 0;
+
+    background-color: transparent;
+  }
+
+  .video-controls__repeat-btn {
+    //margin-right: 299px;
+    margin-left: 35px;
+  }
+
+  .video-controls__full-screen-btn {
+    margin-right: 41px;
+  }
+
+  .video-controls__subtitles-btn {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .video-controls__scale {
+    width: 389px;
+
+    left: 0;
+  }
+
+  .video-controls__progress-bar-btn {
+    top: 42px;
+    left: 112px;
+  }
+
+  /*.video-controls__buttons button {
+    background-color: transparent;
+  }*/
+
+  .video-controls path,
+  .video-controls polygon {
+    fill: @white;
+  }
+
+  .video-controls button:hover path,
+  .video-controls button:hover polygon {
+    fill: #c2c2c2;
+  }
+
+  .video-controls button:active path,
+  .video-controls button:active polygon {
+    fill: #949494;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video-controls {
+    width: 800px;
+    height: 94px;
+  }
+
+  .video-controls__buttons {
+    width: 800px;
+  }
+
+  .video-controls__progress-bar {
+    width: 550px;
+  }
+
+  .video-controls__scale {
+    width: 540px;
+
+    //left: 94px;
+  }
+
+  .video-controls__subtitles-btn {
+    //margin-left: 290px;
+  }
 }
