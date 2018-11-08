@@ -83,11 +83,15 @@
             <ul class="fieldset__list fieldset__list--contacts site-list">
               <li class="fieldset__item">
                 <label class="feedback-form__label--input" for="phone-number"><span class="hide-contact-text">Контактный</span> телефон<sup>*</sup>:</label>
-                <input class="feedback-form__input-text feedback-form__input-text--phone" id="phone-number" type="tel" name="phone-number" placeholder="Введите телефон" required>
+                <div class="feedback-form__input-text-wrapper feedback-form__input-text-wrapper--phone">
+                  <input class="feedback-form__input-text feedback-form__input-text--phone" id="phone-number" type="tel" name="phone-number" placeholder="Введите телефон" required>
+                </div>
               </li>
               <li class="fieldset__item">
                 <label class="feedback-form__label--input" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="feedback-form__input-text feedback-form__input-text--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                <div class="feedback-form__input-text-wrapper feedback-form__input-text-wrapper--mail">
+                  <input class="feedback-form__input-text feedback-form__input-text--email" id="email" type="email" name="email" placeholder="Введите e-mail" required>
+                </div>
               </li>
             </ul>
           </fieldset>
