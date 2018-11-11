@@ -1,5 +1,21 @@
 .map {
   margin-bottom: 29px;
+
+  position: relative;
+}
+
+.map iframe {
+  z-index: 1;
+
+  border: none;
+}
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
 }
 
 @media (min-width: @tablet-width) {

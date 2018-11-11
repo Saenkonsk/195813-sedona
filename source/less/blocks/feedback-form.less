@@ -93,11 +93,17 @@
   }
 
   &:focus {
-    background: @white;
+    background-color: @white;
     outline: 4px solid #e5e5e5;
     //border: 4px solid #e5e5e5;
 
-    //outline: none;
+    &::-moz-placeholder {
+      background-color: @white;
+    }
+
+    &:-moz-placeholder {
+      background-color: @white;
+    }
   }
 }
 
@@ -112,7 +118,7 @@
 
 .feedback-form__input-text--second-name,
 .feedback-form__input-text--patronymic {
-  width: 170px;
+  width: 169px;
 
   &:focus {
     //width: 165px;
@@ -161,14 +167,17 @@
   }
 
   &:focus {
-    background: @white;
+    background-color: @white;
     //border: 4px solid #e5e5e5;
     outline: 4px solid #e5e5e5;
 
-    //outline: none;
+    &::-moz-placeholder {
+      background-color: @white;
+    }
 
-    //width: 242px;
-    //min-height: 128px;
+    &:-moz-placeholder {
+      background-color: @white;
+    }
   }
 }
 
@@ -188,6 +197,8 @@
   font-weight: 700;
   color: @black;
   background-color: #f2f2f2;
+
+  opacity: 1;
 }
 
 .feedback-form__input-text:-ms-input-placeholder,
@@ -208,11 +219,14 @@
   font-weight: 700;
   color: @black;
   background-color: #f2f2f2;
+
+  opacity: 1;
 }
 
 .feedback-form__textarea:-moz-placeholder,
 .feedback-form__textarea::-moz-placeholder {
   line-height: 26px;
+  opacity: 1;
 }
 
 .feedback-form__asterisk {
@@ -435,7 +449,7 @@
 
   .feedback-form__input-text--second-name,
   .feedback-form__input-text--patronymic {
-    width: 155px;
+    width: 154px;
 
     &:focus {
       //width: 150px;
@@ -465,7 +479,7 @@
   }
 
   .feedback-form__textarea {
-    width: 618px;
+    width: 604px;
     min-height: 132px;
 
     margin-bottom: 49px;
@@ -577,12 +591,8 @@
     margin-bottom: 56px;
   }
 
-  .fieldset__list--sights {
-    padding-left: 0;
-  }
-
   .feedback-form__textarea {
-    width: 930px;
+    width: 916px;
     min-height: 130px;
 
     margin-bottom: 49px;

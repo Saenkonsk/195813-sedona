@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <div style="display:none">
@@ -64,8 +65,8 @@
           </p>
         </section>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--name">
-            <legend class="feedback-form__fieldset-title feedback-form__fieldset-title--name">Представьтесь:</legend>
+          <fieldset class="fieldset feedback-form__fieldset feedback-form__fieldset--name">
+            <div class="feedback-form__fieldset-title feedback-form__fieldset-title--name">Представьтесь:</div>
             <ul class="fieldset__list fieldset__list--name site-list">
               <li class="fieldset__item">
                 <label class="feedback-form__label feedback-form__label--input" for="first-name">Имя<sup>*</sup>:</label>
@@ -81,8 +82,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--contacts">
-            <legend class="feedback-form__fieldset-title feedback-form__fieldset-title--contacts">Контактная информация:</legend>
+          <fieldset class="fieldset feedback-form__fieldset feedback-form__fieldset--contacts">
+            <div class="feedback-form__fieldset-title feedback-form__fieldset-title--contacts">Контактная информация:</div>
             <ul class="fieldset__list fieldset__list--contacts site-list">
               <li class="fieldset__item">
                 <label class="feedback-form__label feedback-form__label--input" for="phone-number"><span class="hide-contact-text">Контактный</span> телефон<sup>*</sup>:</label>
@@ -98,8 +99,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--impression">
-            <legend class="feedback-form__fieldset-title feedback-form__fieldset-title--impression">Ваше общее впечатление:</legend>
+          <fieldset class="fieldset feedback-form__fieldset feedback-form__fieldset--impression">
+            <div class="feedback-form__fieldset-title feedback-form__fieldset-title--impression">Ваше общее впечатление:</div>
             <ul class="fieldset__list fieldset__list--impression site-list">
               <li class="fieldset__item">
                 <input class="feedback-form__input-radio visually-hidden" type="radio" id="positive-impression" name="impression" value="positive-impression" checked="">
@@ -115,8 +116,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--sights">
-            <legend class="feedback-form__fieldset-title feedback-form__fieldset-title--sights">Посещенные достопримечательности:</legend>
+          <fieldset class="fieldset feedback-form__fieldset feedback-form__fieldset--sights">
+            <div class="feedback-form__fieldset-title feedback-form__fieldset-title--sights">Посещенные достопримечательности:</div>
             <ul class="fieldset__list fieldset__list--sights site-list">
               <li class="fieldset__item">
                 <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" id="devil's-bridge" name="sights" value="devil's-bridge" checked="">
@@ -128,7 +129,7 @@
               </li>
               <li class="fieldset__item">
                 <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" id="slide-park" name="sights" value="slide-park" checked="">
-                <label class="feedback-form__label feedback-form__label--checkbox" for="slide-park">Слайд-Парк</label>
+                <label class="feedback-form__label feedback-form__label--checkbox" for="slide-park">Слайд-парк</label>
               </li>
               <li class="fieldset__item">
                 <input class="feedback-form__input-checkbox visually-hidden" type="checkbox" id="red-rocks" name="sights" value="red-rocks">
@@ -136,8 +137,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback-form__fieldset feedback-form__fieldset--emotions">
-            <legend class="feedback-form__fieldset-title feedback-form__fieldset-title--emotions">Опишите свои эмоции:</legend>
+          <fieldset class="fieldset feedback-form__fieldset feedback-form__fieldset--emotions">
+            <div class="feedback-form__fieldset-title feedback-form__fieldset-title--emotions">Опишите свои эмоции:</div>
             <textarea class="feedback-form__textarea" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <div class="button-wrapper">
