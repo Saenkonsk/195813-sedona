@@ -20,6 +20,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  //bottom: 0;
 }
 
 .feedback-form__fieldset-title {
@@ -27,7 +28,9 @@
 
   padding: 0;
   padding-top: 18px;
+  margin: 0 auto;
   margin-bottom: 20px;
+
 }
 
 .feedback-form__fieldset-title--contacts {
@@ -98,7 +101,7 @@
 }
 
 .feedback-form__input-text--first-name {
-  width: 208px;
+  width: 207px;
 
   &:focus {
     //width: 202px;
@@ -108,7 +111,7 @@
 
 .feedback-form__input-text--second-name,
 .feedback-form__input-text--patronymic {
-  width: 171px;
+  width: 170px;
 
   &:focus {
     //width: 165px;
@@ -118,7 +121,7 @@
 
 .feedback-form__input-text--phone,
 .feedback-form__input-text--email {
-  width: 258px;
+  width: 257px;
 
   margin-bottom: 7px;
 
@@ -174,13 +177,13 @@
   line-height: 26px;
   font-weight: 700;
   color: @black;
-  //background-color: #f2f2f2;
 }
 
 .feedback-form__input-text::-moz-placeholder,
 .feedback-form__textarea::-moz-placeholder {
   font-size: 18px;
-  line-height: 26px;
+  //line-height: 26px;
+  line-height: 58px;
   font-weight: 700;
   color: @black;
   background-color: #f2f2f2;
@@ -189,7 +192,8 @@
 .feedback-form__input-text:-ms-input-placeholder,
 .feedback-form__textarea:-ms-input-placeholder {
   font-size: 18px;
-  line-height: 26px;
+  //line-height: 26px;
+  line-height: 58px;
   font-weight: 700;
   color: @black;
   background-color: #f2f2f2;
@@ -198,10 +202,16 @@
 .feedback-form__input-text:-moz-placeholder,
 .feedback-form__textarea:-moz-placeholder {
   font-size: 18px;
-  line-height: 26px;
+  //line-height: 26px;
+  line-height: 58px;
   font-weight: 700;
   color: @black;
   background-color: #f2f2f2;
+}
+
+.feedback-form__textarea:-moz-placeholder,
+.feedback-form__textarea::-moz-placeholder {
+  line-height: 26px;
 }
 
 .feedback-form__asterisk {
@@ -328,6 +338,10 @@
   background: #e6e6e6 url("../img/icon-mail.svg") no-repeat center;
 }
 
+.feedback-form__input-text {
+  vertical-align: middle;
+}
+
 @media (min-width: @tablet-width) {
   .feedback-form {
     display: flex;
@@ -354,11 +368,14 @@
   .feedback-form__fieldset-title {
     font-size: 21px;
 
+    margin: 0;
     margin-bottom: 73px;
   }
 
   .feedback-form__fieldset--name .feedback-form__fieldset-title {
     margin-bottom: 57px;
+
+    text-align: left;
   }
 
   .feedback-form__fieldset--impression {
@@ -412,7 +429,7 @@
   }
 
   .feedback-form__input-text--first-name {
-    width: 194px;
+    width: 193px;
 
     &:focus {
       //width: 187px;
@@ -421,7 +438,7 @@
 
   .feedback-form__input-text--second-name,
   .feedback-form__input-text--patronymic {
-    width: 156px;
+    width: 155px;
 
     &:focus {
       //width: 150px;
@@ -430,7 +447,7 @@
 
   .feedback-form__input-text--phone,
   .feedback-form__input-text--email {
-    width: 628px;
+    width: 627px;
 
     &:focus {
       //width: 620px;
@@ -474,6 +491,8 @@
     position: relative;
     padding: 0 185px;
 
+    text-align: center;
+
     &::before {
       position: absolute;
       content: "";
@@ -496,6 +515,11 @@
       right: 0;
     }
   }
+
+  .feedback-form__fieldset-title--impression {
+    text-align: left;
+    padding-left: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -516,7 +540,7 @@
   }
 
   .feedback-form__input-text--first-name {
-    width: 328px;
+    width: 327px;
 
     &:focus {
       //width: 320px;
@@ -525,7 +549,7 @@
 
   .feedback-form__input-text--second-name,
   .feedback-form__input-text--patronymic {
-    width: 290px;
+    width: 289px;
 
     &:focus {
       //width: 282px;
@@ -535,7 +559,7 @@
 
   .feedback-form__input-text--phone,
   .feedback-form__input-text--email {
-    width: 295px;
+    width: 294px;
 
     &:focus {
       //width: 287px;
