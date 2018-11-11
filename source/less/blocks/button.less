@@ -2,8 +2,10 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: @white;
+
+  text-transform: uppercase;
 
   background-color: @blue;
 
@@ -39,8 +41,6 @@
 
   padding: 0;
 
-  text-transform: uppercase;
-
   &:hover {
     background-color: #669ec0;
   }
@@ -48,6 +48,11 @@
   &:active {
     color: #85b0cd;
     background-color: #5496bd;
+  }
+
+  &:disabled {
+    color: @white;
+    background-color: #e5e5e5;
   }
 }
 
@@ -59,9 +64,7 @@
   }
 
   .button--review {
-    width: 324px;
-
-    //margin-bottom: 10px;
+    width: 323px;
   }
 }
 
