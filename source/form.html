@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
@@ -86,13 +88,13 @@
             <div class="feedback-form__fieldset-title feedback-form__fieldset-title--contacts">Контактная информация:</div>
             <ul class="fieldset__list fieldset__list--contacts site-list">
               <li class="fieldset__item">
-                <label class="feedback-form__label feedback-form__label--input" for="phone-number"><span class="hide-contact-text">Контактный</span> телефон<sup>*</sup>:</label>
+                <label class="feedback-form__label feedback-form__label--input feedback-form__label--input-phone" for="phone-number"><span class="hide-contact-text">Контактный</span> телефон<sup>*</sup>:</label>
                 <div class="feedback-form__input-text-wrapper feedback-form__input-text-wrapper--phone">
                   <input class="feedback-form__input-text feedback-form__input-text--phone" id="phone-number" type="tel" name="phone-number" placeholder="Введите телефон" required="">
                 </div>
               </li>
               <li class="fieldset__item">
-                <label class="feedback-form__label feedback-form__label--input" for="email">Электронная почта<sup>*</sup>:</label>
+                <label class="feedback-form__label feedback-form__label--input feedback-form__label--input-email" for="email">Электронная почта<sup>*</sup>:</label>
                 <div class="feedback-form__input-text-wrapper feedback-form__input-text-wrapper--mail">
                   <input class="feedback-form__input-text feedback-form__input-text--email" id="email" type="email" name="email" placeholder="Введите e-mail" required="">
                 </div>

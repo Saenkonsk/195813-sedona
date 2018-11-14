@@ -23,8 +23,6 @@
 .fieldset__list--impression,
 .fieldset__list--sights {
   text-align: left;
-
-  //margin-bottom: 5px;
 }
 
 .fieldset__list--contacts label {
@@ -34,10 +32,6 @@
 
   margin-bottom: 6px;
 }
-
-/*.fieldset__list--impression li:last-child {
-  padding-top: 1px;
-}*/
 
 @media (min-width: @tablet-width) {
   .fieldset__list--name li {
@@ -66,28 +60,14 @@
     padding-left: 96px;
   }
 
-  .fieldset__list--sights .fieldset__item {
+  .fieldset__list--sights li {
     width: 30%;
   }
-
-  /*.fieldset__list--contacts label {
-    padding-left: 0;
-  }*/
-
-  /*.fieldset__list--sights .fieldset__item {
-    width: 200px;
-
-    padding-right: 0;
-  }*/
 
   .fieldset__list--contacts {
     display: flex;
     flex-wrap: wrap;
   }
-
-  /*.fieldset__list--contacts .fieldset__item {
-    width: 50%;
-  }*/
 }
 
 @media (min-width: @desktop-width) {
@@ -100,18 +80,8 @@
     padding-left: 80px;
   }
 
-  .fieldset__list--sights .fieldset__item {
-    //padding-right: 10px;
-
-    width: 127px;
-  }
-
   .fieldset__list--sights {
     padding-left: 0;
-  }
-
-  .fieldset__list--sights .fieldset__item:last-child {
-    padding-left: 110px;
   }
 
   .fieldset__list--contacts label {

@@ -108,8 +108,8 @@
     justify-content: flex-start;
   }
 
-  .main-nav__item:nth-child(2) {
-    margin-right: auto;
+  .main-nav__item:nth-child(4n + 2) {
+    margin-right: 153px;
   }
 
   .main-nav__item {
@@ -168,11 +168,9 @@
     display: none;
   }
 }
-/*.page-header__logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 102px;
-    margin: 0 auto;
-}*/
+
+@media (min-width: @desktop-width) {
+  .main-nav__item:nth-child(4n + 2) {
+    margin-right: 240px;
+  }
+}
